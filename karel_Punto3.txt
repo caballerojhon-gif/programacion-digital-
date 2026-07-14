@@ -1,0 +1,127 @@
+iniciar-programa
+
+	define-nueva-instruccion gira-derecha como
+	inicio
+	repetir 3 veces
+	gira-izquierda;
+	fin;
+
+		define-nueva-instruccion media-vuelta como
+		inicio
+		repetir 2 veces
+		gira-izquierda;
+		fin;
+
+			define-nueva-instruccion recoger-todos como
+			inicio
+			mientras junto-a-zumbador hacer
+			coge-zumbador;
+			fin;
+
+				define-nueva-instruccion subir como
+				inicio
+				gira-derecha;
+				avanza;
+				gira-derecha;
+				fin;
+
+	define-nueva-instruccion bajar como
+	inicio
+	gira-izquierda;
+	avanza;
+	gira-izquierda;
+	fin;
+
+inicia-ejecucion
+
+	recoger-todos;
+
+		repetir 7 veces
+		inicio
+		avanza;
+		recoger-todos;
+		fin;
+
+		subir;
+		recoger-todos;
+
+			repetir 7 veces
+			inicio
+			avanza;
+			recoger-todos;
+			fin;
+
+		bajar;
+		recoger-todos;
+
+		repetir 7 veces
+		inicio
+		avanza;
+		recoger-todos;
+		fin;
+
+				subir;
+				recoger-todos;
+
+					repetir 7 veces
+					inicio
+					avanza;
+					recoger-todos;
+					fin;
+
+						bajar;
+						recoger-todos;
+
+	repetir 7 veces
+	inicio
+	avanza;
+	recoger-todos;
+	fin;
+
+		subir;
+		recoger-todos;
+
+		repetir 7 veces
+		inicio
+		avanza;
+		recoger-todos;
+		fin;
+
+			bajar;
+			recoger-todos;
+
+				repetir 7 veces
+				inicio
+				avanza;
+				recoger-todos;
+				fin;
+
+		subir;
+		recoger-todos;
+
+			repetir 7 veces
+			inicio
+			avanza;
+			recoger-todos;
+			fin;
+
+		bajar;
+		recoger-todos;
+
+			repetir 7 veces
+			inicio
+			avanza;
+			recoger-todos;
+			fin;
+
+		gira-derecha;
+		avanza;
+
+				mientras algun-zumbador-en-la-mochila hacer
+				deja-zumbador;
+
+apagate;
+
+termina-ejecucion
+
+finalizar-programa
