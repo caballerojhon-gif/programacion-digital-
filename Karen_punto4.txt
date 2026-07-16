@@ -1,0 +1,43 @@
+iniciar-programa
+define-nueva-instruccion salida como
+    avanza;
+inicia-ejecucion
+
+mientras frente-bloqueado hacer
+    gira-izquierda;
+
+mientras frente-libre y no junto-a-zumbador hacer
+    avanza;
+
+gira-izquierda;
+
+mientras frente-libre hacer
+inicio
+
+    mientras derecha-bloqueada y frente-libre hacer
+        avanza;
+
+    si derecha-libre entonces
+    inicio
+        repetir 3 veces
+            gira-izquierda;
+            
+mientras (frente-libre y izquierda-libre y derecha-libre) hacer
+avanza;
+        gira-izquierda;
+    fin;
+
+    si frente-bloqueado entonces
+    inicio
+        gira-izquierda;
+        avanza;
+    fin;
+si frente-bloqueado y izquierda-bloqueada y derecha-libre entonces
+inicio
+repetir 3 veces gira-izquierda;
+avanza;
+    apagate;
+fin;
+fin;
+termina-ejecucion
+finalizar-programa
