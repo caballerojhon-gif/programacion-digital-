@@ -1,0 +1,4 @@
+# Punto 9
+
+for i in range(1, 101):
+    print(i, "     ", 101 - i)
